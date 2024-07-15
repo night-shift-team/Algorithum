@@ -12,8 +12,7 @@ function solution(brackets) {
 
     for (let i = 0; i < brackets.length; i++) {
         const bracket = brackets[i];
-        console.log(stack)
-        
+
         // 1. 여는 괄호면 넣고
         if (bracket === "(" || bracket === "{") {
             stack.push(bracket);
@@ -21,6 +20,9 @@ function solution(brackets) {
 
         // 2. 닫는 괄호면 빼고
         if (bracket === ")" || bracket === "}") {
+            if (stack.length === 0) {
+                return answer;
+            }
             stack.pop(bracket);
         }
     }
