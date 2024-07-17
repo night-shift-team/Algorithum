@@ -16,7 +16,6 @@ func main() {
 			fmt.Println("NO")
 			return
 		}
-
 		if goalho == strings.Replace(goalho, "()", "", strings.Count(goalho, "()")) {
 			fmt.Println("NO")
 			return
