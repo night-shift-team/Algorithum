@@ -1,5 +1,5 @@
 function section(N, K) {
-    // 1부터 N까지의 왕자들 배열을 생성
+    //왕자들 배열
     let princes = [];
     for (let i = 1; i <= N; i++) {
         princes.push(i);
