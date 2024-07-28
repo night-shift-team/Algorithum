@@ -2,7 +2,7 @@ const NUMS = [11,7,5,6,10,9];
 
 /**
  * 삽입정렬
- * Key 값을 뽑아서, 앞에 요소들과 비교하여 정렬함.
+ * 정렬라인, 비정렬 라인 구분하여 Key를 뽑아 정렬라인과 비교하여 스위칭.
  */
 function solution(nums) {
     let answer = [...nums];
